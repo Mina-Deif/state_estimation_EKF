@@ -18,9 +18,6 @@ time_step = 1/100  # in sec
 msg_to_publish = estimated_coordinates_msg()
 
 
-R=0.05                #variance in measurment noise
-previous_u = -2 
-previous_y = 2.2; 
 
 v=0
 delta = 0
