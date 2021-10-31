@@ -1,7 +1,0 @@
-<launch>
-	<node name="model.py" pkg="state_estimation" type="model.py" output="screen"/>
-	<node name="path_generator.py" pkg="state_estimation" type="path_generator.py" output="screen"/>
-	<node name="pure_pursuit_controller.py" pkg="state_estimation" type="pure_pursuit_controller.py" output="screen"/>
-	<node name="extended_kalman_filter.py" pkg="state_estimation" type="extended_kalman_filter.py" output="screen"/>
-	<node pkg="rostopic" type="rostopic" name="rostopic" args="pub /steering_input state_estimation/velocity_msg 16.0 0"/>
-</launch>
